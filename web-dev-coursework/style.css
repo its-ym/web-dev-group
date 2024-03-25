@@ -1,7 +1,7 @@
 body {
   display: grid;
   margin: 0;
-  font-family: system-ui;
+  font-family: 'Montserrat', sans-serif;
   align-content: start; 
 }
 
@@ -9,8 +9,8 @@ header {
   background-color: hsl(224, 41%, 58%);
   color: hsl(100, 50%, 90%);
   font-size: 0.9em;
+  padding: 20px;
 }
-
 
 @media (min-width: 600px) {
   header {
@@ -27,36 +27,38 @@ main {
 h1 {
   margin-block: 0.5rem;
 }
+
 #search {
   display: flex;
-  align-items: center; /* Align items vertically */
-  margin-right: auto; /* Push search bar to the left */
+  align-items: center;
+  margin-right: auto;
 }
+
 nav {
   display: flex;
   gap: 0.9rem;
   padding-block: 0.5rem;
   justify-content: space-between;
 }
-nav a {
-text-decoration: none;
-color: inherit;
-padding: 0.25em 0.5em;
-font-size: 1.3rem;
-transition: background-color 400ms;
-}
-nav a:hover{
-background-color: hsl(240, 18%, 38%);
 
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.25em 0.5em;
+  font-size: 1.3rem;
+  transition: background-color 400ms;
 }
-  
+
+nav a:hover {
+  background-color: hsl(240, 18%, 38%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   font-family: 'Montserrat', sans-serif;
 }
-
 
 .container {
   width: 100%;
@@ -75,11 +77,7 @@ background-color: hsl(240, 18%, 38%);
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-  
-
 }
-
-
 
 .img-container,
 .body-container {
@@ -125,7 +123,7 @@ background-color: hsl(240, 18%, 38%);
 .title,
 .price {
   color: #6878bd;
-  font-size: 1.2em; 
+  font-size: 1.1em; 
   font-weight: bold;
   letter-spacing: 1px;
   margin: 3px 0; 
@@ -133,7 +131,7 @@ background-color: hsl(240, 18%, 38%);
 
 .info {
   letter-spacing: 0.5px;
-  margin-bottom: 6px;
+  margin-bottom: 1px;
 }
 
 .separator {
@@ -194,17 +192,58 @@ background-color: hsl(240, 18%, 38%);
 .action:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 .action a {
-  text-decoration: none; /* Remove underline */
-  color: #faf9f9; /* Change text color */
+  text-decoration: none; 
+  color: #faf9f9; 
 }
 
 .action a:hover {
-  text-decoration: none; /* Ensure no underline on hover */
-  color: #ccc; /* Change text color on hover */
+  text-decoration: none;
+  color: #ccc; 
 }
 
-.try{
-  width: 250px;
-  height: 250px;
+.try { 
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 600px;
+  height: 350px;
+}
+
+.event-info-container {
+  position: absolute;
+  top: 69%;
+  right: 82%;
+  transform: translateY(-50%);
+  width: 300px; 
+  padding: 0.5rem;
+}
+
+.event-info-container h1 {
+  color: #6878bd;
+  font-size: 2em;
+}
+
+.event-info-container p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.event-info-container .info {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.event-info-container a {
+  text-decoration: none;
+  color: #faf9f9;
+  background-color: #6878bd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.4s;
+}
+
+.event-info-container a:hover {
+  background-color: #4461a0;
 }
