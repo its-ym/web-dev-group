@@ -247,7 +247,6 @@ header h1 {
 
 
 
-
 .event-info-container {
   max-width: 800px;
   margin: 0 auto;
