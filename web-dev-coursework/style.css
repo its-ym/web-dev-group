@@ -7,14 +7,14 @@ body {
 
 
 header {
-  background-color: hsl(224, 41%, 58%);
+   background-color: hsl(224, 41%, 58%);
   color: hsl(100, 50%, 90%);
   font-size: 0.9em;
   padding: 20px;
 }
 
 @media (min-width: 600px) {
-  header {
+   header {
     display: flex;
     justify-content: space-between;
   }
@@ -26,12 +26,12 @@ main {
 }
 
 h1 {
-  margin-block: 0.5rem;
+    margin-block: 0.5rem;
 }
 
 #search {
   display: flex;
-  align-items: center;
+   align-items: center;
   margin-right: auto;
 }
 
@@ -68,18 +68,20 @@ nav a:hover {
   align-items: flex-end;
   flex-wrap: wrap;
   margin-top: 10px;
+  
 }
 
 .item-container {
-  position: relative;
-  margin: 24px;
-  width: 250px;
-  height: 528px; 
-  overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-  border-radius:  10px;
-  border: 2pox solid #ccc
+   position: relative;
+   margin: 24px;
+   width: 250px;
+   height: 528px; 
+   overflow: hidden;
+   background-color: #fff;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+   border-radius:  10px;
+   border: 2pox solid #ccc
+ 
 }
 
 .img-container,
@@ -125,7 +127,7 @@ nav a:hover {
 
 .title,
 .price {
-  color: #6878bd;
+   color: #6878bd;
   font-size: 1.1em; 
   font-weight: bold;
   letter-spacing: 1px;
@@ -133,8 +135,8 @@ nav a:hover {
 }
 
 .info {
-  letter-spacing: 0.5px;
-  margin-bottom: 1px;
+   letter-spacing: 0.5px;
+   margin-bottom: 1px;
 }
 
 .separator {
@@ -146,7 +148,7 @@ nav a:hover {
 
 .additional-info {
   border-top: 1px solid #bbbbbb;
-  margin-top: 12px;
+  margin-top: 25px;
   padding: 28px; 
 }
 
@@ -232,7 +234,7 @@ header h1 {
 }
 
 #menu a:hover {
-  background-color: hsl(240, 18%, 38%);
+  background-color: hsl(240, 23%, 3%);
 }
 
 .try {
@@ -240,9 +242,10 @@ header h1 {
   height: auto;
   display: block;
   margin: 20px auto;
-  border: 2px solid #ccc;
+  border: 2px solid #6878bd;
   border-radius: 90px;
 }
+
 
 .event-info-container {
   max-width: 800px;
