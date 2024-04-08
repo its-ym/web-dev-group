@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar */
+ul {
+    list-style: none;
+
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+body, html {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.logo {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.navigation-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    margin: 0 30px;
+}
+
+
+header {
+    width: 100vw;
+    height: 60vh;
+    background-color: rgb(209, 236, 209);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+
+}
+
+.header content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+
+.menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+     width: 40px;
+    cursor: pointer;
+    display: none;
+
+
+}
+
+
+    /* intro */
+
+    .intro-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 2rem;
+      }
+  
+      .intro-plan {
+        flex: 1;
+        max-width: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.5s;
+        
+      }
+
+    
+  
+    .intro-plan:hover {
+      transform: translateY(-10px);
+    }
+  
+      .intro-title {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: white;
+      }
+  
+      .intro-price {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: white;
+      }
+  
+      .card1 {
+        background-image: url('./Images/enigma.jpeg'); 
+      }
+  
+      .card2 {
+        background-image: url('./Images/event1.jpg');
+      }
+  
+      .card3 {
+        background-image: url('./Images/event4.jpeg');
+      }
+
+     
+
+
+/* upcoming events */
+.event-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+  }
+
+  .event-box {
+    flex: 1;
+    max-width: 250px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.5s;
+    color: black;
+    
+  }
+
+  .event-box:hover {
+    transform: translateY(-10px);
+  }
+
+  .event-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .event-date {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .event-location {
+    color: black;
+  }
+
+  .price {
+    color: black;
+  }
+
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .plan-features li {
+    margin-bottom: 20px;
+  }
+
+  .button {
+    padding: 10px;
+    background-color: rgb(174, 215, 230);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .size {
+    height: 125px;
+    width: 250px;
+  }
+
+  
+
+.section {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(209, 236, 209);
+    font-size: 10vmin;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+
+}
+
+
+/* footer */
+.footer-container {
+   
+  background-color: rgb(209, 236, 209);
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer {
+  background-color: rgb(209, 236, 209);
+    padding: 70px 0;
+}
+
+.footer-col {
+width: 22vw;
+padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+
+}
+
+// browse events page code
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: block;
+    }
+    .navigation-bar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(209, 236, 209);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+
+    }
+    .navigation li {
+        margin: 30px auto;
+    }
+
+    /* intro page */
+    .intro-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    
+    /* upcoming events */
+    .event-container {
+        flex-direction: column;
+        height: 100%;
+      }
+      /* footer */
+      .footer-col {
+        width: 50%;
+        margin-bottom: 30px
+      }
+    }
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    
+    <nav class="navigation-bar">
+        <a href="./homepage.html"><h1 class="logo">CryptoShow</h1></a>
+        <ul class="navigation">
+          
+            <li><a href="./browseEvents.html" class="link">Browse Events</a></li>
+            <li><a href="./devices.html" class="link">Crypto Devices</a></li?>
+            <li><a href="./CreateEvent.html" class="link">Create Event</a></li>
+            <li><a href="./login.html" class="link">Login</a></li>
+            <li><a href="./registration.html" class="link">Sign Up</a></li>
+        </ul>
+        <ion-icon name="menu-outline" class="menu"></ion-icon>
+    </nav>
+  
+  
+    <header>
+    <div class="header-content">
+        <h1>Browse Crypto Events</h1>    
+    </div>
+    </header>
+
+
+</section>
+ 
+
+<footer class="footer">
+<div class="footer-container">
+<div class="row">
+  <div class="footer-col">
+    <h4>CryptoShow </h4> 
+    <p>Experience amazing tech events and exhibitions</p>
+    </div>
+<div class="footer-col">
+  <h4>Useful Links</h4>
+  <ul>
+    <li><a href="./about.html" class="link">About</a></li>
+          <li><a href="./browseEvents.html" class="link">Browse Events</a></li>
+          <li><a href="./devices.html" class="link">Crypto Devices</a></li>
+          <li><a href="./CreateEvent.html" class="link">Create Event</a></li>
+          <li><a href="./login.html" class="link">Login</a></li>
+          <li><a href="./registration.html" class="link">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="footer-col">
+  <h4>Follow Us</h4>
+  <div class="social-media">
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-instagram"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+  </div>
+
+</div>
+
+<div class="footer-col">
+  <h4>Contact</h4>
+  <ul>
+    <li><span> <ion-icon name="location-outline"></ion-icon>
+      Gateway House, Leicester LE1 9BH</li>
+    <li><ion-icon name="call-outline"></ion-icon>01162551551</li>
+    
+  </ul>
+  
+</div>
+
+
+
+</div>
+
+  
+</footer>
+
+    
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+
+<script>
+ const menu = document.querySelector('.menu')
+ const navigation = document.querySelector('.navigation')
+ 
+ menu.addEventListener('click',()=>{
+ navigation.classList.toggle('mobile-menu')
+ })
+</script>
+</body>
+</html>  
+
