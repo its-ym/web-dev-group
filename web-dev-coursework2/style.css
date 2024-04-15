@@ -18,7 +18,7 @@ ul {
 }
 
 .link {
-  color: #fff;
+  color: #020101;
   text-decoration: none;
   font-family:  'Montserrat', sans-serif;
 }
@@ -30,7 +30,7 @@ body, html {
 }
 
 .logo {
-  color: #fff;
+  color: #030303;
   text-decoration: none;
   font-weight: bold;
   font-family:  'Montserrat', sans-serif;
@@ -43,7 +43,7 @@ body, html {
   width: 100%;
   justify-content: space-between;
   padding: 20px;
-  color:#fff;
+  color:#020202;
 }
 
 .navigation {
@@ -70,7 +70,7 @@ header {
 
 .header-content {
   margin-bottom: 150px;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   text-align: center;
   font-family: sans-serif;
 }
@@ -155,7 +155,7 @@ header {
   position: relative;
   width: 100%;
   height: 400px;
-  background-color: rgba(91, 105, 184, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   transition: height linear 0.4s, opacity linear 0.2s;
 }
@@ -166,7 +166,7 @@ header {
 }
 
 .event-info {
-  background-color: #fff;
+  background-color: #fdfbfb;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,7 +177,7 @@ header {
 
 .title,
 .price {
-   color: #6878bd;
+   color: #000000;
   font-size: 1.1em; 
   font-weight: bold;
   letter-spacing: 1px;
@@ -197,7 +197,7 @@ header {
 .separator {
   width: 20%;
   height: 6px;
-  background-color: #17537a;
+  background-color: #000000;
   margin-bottom: 16px;
 }
 
@@ -214,21 +214,21 @@ header {
 }
 
 .info i {
-  color: #18537a;
+  color: #010202;
   font-size: 1.1em;
   margin-right: 4px;
 }
 
 .info span {
-  color: #346a8f;
+  color: #010202;
   font-family:'Montserrat', sans-serif;
 
 }
 
 .action {
   text-decoration: none;
-  color: #faf9f9;
-  border: 3px solid #fff;
+  color: #000000;
+  border: 3px solid #ffffff;
   background-color: transparent;
   position: absolute;
   top: -100px;
@@ -255,17 +255,17 @@ header {
 
 .action a {
   text-decoration: none; 
-  color: #faf9f9; 
+  color: #ffffff; 
 }
 
 .action a:hover {
   text-decoration: none;
-  color: #ccc; 
+  color: #ffffff; 
 }
 
 header {
   background-color: hsl(224, 41%, 58%);
-  color: hsl(100, 50%, 90%);
+  color: hsl(0, 0%, 1%);
   font-size: 1.2rem;
   padding: 20px;
 }
@@ -302,7 +302,7 @@ padding: 0 15px;
 
 .footer-col h1,h2,h3,h4 {
 font-size: 18px;
-color: #fff;
+color:hsl(0, 0%, 0%);
 text-transform: capitalize;
 margin-bottom: 30px;
 font-weight: 500;
@@ -310,7 +310,7 @@ position: relative;
 
 }
 .footer-col ion-icon, ul{
-color: #fff;
+color: #000000;
 }
 
 
